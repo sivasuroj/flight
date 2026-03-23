@@ -50,3 +50,5 @@ dist/
 
 # Exclude Helm chart for this example
 /chart
+# auto generated wildcard
+db/.env

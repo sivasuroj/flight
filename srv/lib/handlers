@@ -1,0 +1,9 @@
+
+async function readTravel(req, res) {
+    const { maxID } = await SELECT.one `max(TravelID) as maxID` .from (Travel)
+    req.data.TravelID = maxID + 1
+}
+
+module.exports = {
+    readTravel
+}
